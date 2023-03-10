@@ -17,9 +17,11 @@ namespace PalindromeExerciseTests
     public class UnitTest1
     {
         [Theory]
-        [InlineData("Palindrome", true)] // ← you will need to put some test data and expected result here.
+        [InlineData("Palindrome", false)] // ← you will need to put some test data and expected result here.
         [InlineData("money", false)]
         [InlineData("milli", false)]
+        [InlineData("kayak", true)]
+        [InlineData("bob", true)]
 
         // For example [InlineData(“racecar”, true)]
         public void IsAPalindromeTest(string anwser, bool expected)
